@@ -5,16 +5,3 @@
 - Shared library uses **groovy** syntax and file name ends with **.groovy** extension. 
 
 #
-## How to create and use shared library in Jenkins.
-
-### How to create Shared library
-- Login to your Jenkins dashboard. <a href="">Jenkins Installation</a>
-- Go to **Manage Jenkins** --> **System** and search for **Global Trusted Pipeline Libraries**.
-<img src="https://github.com/kalyan0996/kalyan-Jenkins_SharedLib" />
-
-  **Name:** Shared <br>
-  **Default version:** \<branch name><br>
-  **Project repository:** https://github.com/DevMadhup/Jenkins_SharedLib.git <br>
-
-
-**Note:** @Library() _ is the syntax to use shared library.
