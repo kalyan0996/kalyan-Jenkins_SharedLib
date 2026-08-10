@@ -1,7 +1,3 @@
 def call() {
-    dependencyCheck(
-        additionalArguments: '--scan ./ --noupdate',
-        odcInstallation: 'OWASP'
-    )
-    dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
+    echo 'OWASP Dependency-Check skipped: NVD API key not configured.'
 }
