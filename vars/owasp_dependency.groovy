@@ -4,5 +4,7 @@ def call() {
         odcInstallation: 'OWASP'
     )
 
-    dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
+    dependencyCheckPublisher(
+        pattern: '**/dependency-check-report.xml'
+    )
 }
