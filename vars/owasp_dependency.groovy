@@ -7,4 +7,4 @@ def call() {
         pattern: '**/dependency-check-report.xml'
     )
 }
-EOF
+
