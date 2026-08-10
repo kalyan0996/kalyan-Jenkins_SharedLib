@@ -1,8 +1,10 @@
 def call() {
     dependencyCheck(
-        additionalArguments: '--scan ./ --data /var/lib/jenkins/dependency-check-data',
+        additionalArguments: '--scan ./ --noupdate',
         odcInstallation: 'OWASP'
     )
 
-    dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
+    dependencyCheckPublisher(
+        pattern: '**/dependency-check-report.xml'
+    )
 }
